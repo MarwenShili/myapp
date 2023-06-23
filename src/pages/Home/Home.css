@@ -1,12 +1,9 @@
-.home {
-  color: red;
-  border: 1px solid #dadada;
-  padding: 80px;
-  border-radius: 17px;
-  margin: 40px;
+.home .cards {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  flex-direction: column;
+  gap: 30px;
+  flex-wrap: wrap;
+  /* width: 100%; */
+}
+.home {
+  padding: 50px;
 }

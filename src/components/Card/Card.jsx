@@ -5,11 +5,16 @@ import "./Card.css";
 
 function Card(props) {
   // const [count, setCount] = useState(0);
+  const { setCount } = props;
+
+  function handleCount() {
+    setCount(props.count + 1);
+  }
 
   return (
     <div className="card">
       Card {props.title}
-      <button onClick={() => props.setCount(props.count + 1)}>Increment</button>
+      <button onClick={handleCount}>Increment</button>
       {props.count}
     </div>
   );
